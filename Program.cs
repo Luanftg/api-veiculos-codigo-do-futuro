@@ -1,3 +1,4 @@
+
 using api_veiculos.Models;
 using api_veiculos.Repositories.Entity;
 using api_veiculos.Repositories.Interface;
@@ -8,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<IServicoAdm<Administrador>, AdministradorRepositorioEntity>();
-//builder.Services.AddScoped<IServico<Cliente>, ClienteRepositorioEntity>();
+builder.Services.AddScoped<IServico<Veiculo>, VeiculoRepositorioEntity>();
+// builder.Services.AddScoped<IServico<Cliente>, ClienteRepositorioEntity>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
