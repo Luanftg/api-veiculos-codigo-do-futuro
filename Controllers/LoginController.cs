@@ -35,4 +35,5 @@ public class LoginController : ControllerBase
 
         return StatusCode(200, administradorLogado);
     }
+
 }
